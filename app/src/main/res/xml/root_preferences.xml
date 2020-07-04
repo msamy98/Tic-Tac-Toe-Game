@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        app:key="@string/switch_key"
+        app:title="Play First"
+        app:defaultValue="true"
+        app:summary="Select your turn to play"/>
+    <ListPreference
+        app:key="@string/symbol_key"
+        app:title="Play Symbol"
+        app:entries="@array/symbol_array"
+        app:entryValues="@array/symbol_array"
+        app:defaultValue="O"/>
+
+
+</PreferenceScreen>

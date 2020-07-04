@@ -1,0 +1,58 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".ModeSlection">
+
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/autour_one"
+        android:gravity="center"
+        android:onClick="easyMode"
+        android:text="Easy"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mediumButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/autour_one"
+        android:gravity="center"
+        android:onClick="mediumMode"
+        android:text="Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/autour_one"
+        android:gravity="center"
+        android:onClick="hardMode"
+        android:text="Hard"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediumButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

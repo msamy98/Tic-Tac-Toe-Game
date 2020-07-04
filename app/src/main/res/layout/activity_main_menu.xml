@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".MainMenuActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Tic Tac Toe"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/display_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/autour_one"
+        android:gravity="center"
+        android:onClick="playButtonClick"
+        android:text="Play"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="261dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/autour_one"
+        android:gravity="center"
+        android:onClick="settingsButtonClick"
+        android:text="Settings"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
